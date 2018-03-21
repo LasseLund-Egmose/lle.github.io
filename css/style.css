@@ -1,3 +1,6 @@
+* {
+    -webkit-backface-visibility: hidden;
+}
 html,
 body {
     background-color: #e0e0e0;
@@ -31,6 +34,17 @@ body {
     box-sizing: border-box;
     opacity: 0;
     padding: 0rem 2rem 0.75rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+#container > #inner-container > #card > #top-line {
+    box-sizing: border-box;
+    height: 1.5rem;
+    margin-left: -2rem;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
@@ -58,9 +72,28 @@ body {
 #container > #inner-container > #card > h1 {
     display: flex;
     font-size: 1.6rem;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    margin: 0.5em 0;
     opacity: 0;
     text-align: center;
+}
+
+#container > #inner-container > #card > h1#typed {
+    display: block;
+    font-size: 1.35rem;
+    margin: -0.4em 0 0.75rem 0;
+    text-align: center;
+}
+
+#container > #inner-container > #card > h1#typed > .typed-cursor {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    position: relative;
+    top: -0.1rem;
 }
 
 #container > #inner-container > #card > h2 {
@@ -68,19 +101,29 @@ body {
     display: flex;
     font-size: 0.925rem;
     font-weight: bold;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     opacity: 0;
-    text-align: justify;
+    text-align: center;
     text-transform: uppercase;
 }
 
 #container > #inner-container > #card > hr {
+    border: 1px solid #607d8b, 0, 0, 0;
     margin: 0.5rem 0;
     opacity: 0;
+    
 }
 
 #container > #inner-container > #card > p {
+    font-size: 0.85rem;
     opacity: 0;
+}
+
+#container > #inner-container > #card > p#description {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 2;
 }
 
 #container > #inner-container > #card > span {
@@ -88,7 +131,10 @@ body {
 }
 
 #container > #inner-container > #card > footer {
+    display: flex;
     font-size: 0.75rem;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     opacity: 0;
 }
 
@@ -100,7 +146,6 @@ body {
     color: white;
     padding: 0.1rem 0.4rem;
 }
-
 
 /* open-sans-regular - latin */
 
@@ -167,4 +212,64 @@ body {
     url('../fonts/open-sans-v15-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/open-sans-v15-latin-700italic.svg#OpenSans') format('svg');
     /* Legacy iOS */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
