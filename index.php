@@ -18,8 +18,8 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <link rel="stylesheet" href="css/devicon.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <script src="js/jquery.min.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/animations.min.js"></script>
+    <script async src="js/typed.min.js"></script>
+    <script async src="js/script.min.js"></script>
     <title>LLEDev | Full-Stack-udvikling</title>
 </head>
 
@@ -70,6 +70,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>
