@@ -37,9 +37,9 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 <h1 id="typed" style="text-align:center;"><span>Et website?</span><span>En webshop?</span><span>En hjælpende hånd til det næste IT-projekt?</span></h1>
                 <h2><span>Mit</span>&nbsp;<span>navn</span>&nbsp;<span>er</span>&nbsp;<span>Lasse</span>&nbsp;<span>Lund-Egmose</span>&nbsp;<span>og</span>&nbsp;<span>jeg</span>&nbsp;<span>er</span>&nbsp;<span>klar</span>&nbsp;<span>til</span>&nbsp;<span>at</span>&nbsp;<span>hjælpe!</span></h2>
                 <hr />
-                <p><b>Hvem er jeg?</b><br/>Jeg er en <?php echo $yearsOld; ?>-årig mand bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M. Jeg leder i øjeblikket efter job i mit forestående sabbatår.</p>
-                <p><b>Full-Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med både PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
-                <p><b>Skal vi samarbejde om dit eller din virksomheds næste IT-projekt?</b><br/>Tøv ikke med at skrive til mig! &mdash; Enten på mail <a href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a> eller ring til mig på tlf. <a href="tel:+4523902119">+4523902119</a>.</p>
+                <p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M. Jeg leder i øjeblikket efter job i mit kommende sabbatår.</p>
+                <p><b>Full-Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
+                <p><b>Skal vi samarbejde om dit eller din virksomheds næste IT-projekt?</b><br/>Tøv ikke med at kontakte mig! &mdash; Enten på mail <a href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a> eller ring til mig på tlf. <a href="tel:+4523902119">+4523902119</a>.</p>
                 <hr />
                 <div class="competence-container">
                     <i class="devicon-html5-plain-wordmark"></i>
