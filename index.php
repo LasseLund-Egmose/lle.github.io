@@ -12,14 +12,23 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <meta charset="utf-8" />
     <meta name=”author” content="LLEDev - Lasse Lund-Egmose"/>
     <meta name=”description” content="Udvikler,Full-stack, Website,Webshop,Bootstrap,IT-projekt,IT-hjælp,HTML5,JavaScript,CSS,jQuery,PHP,MySQL,NodeJS,GIT,Android,Docker,Java,Windows,Ubuntu,Linux,Apple" />
+    <meta name="msapplication-TileColor" content="#607d8b">
+    <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://lledev.com/" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/devicon.min.css" />
-    <link rel="stylesheet" href="css/style.min.css?v2" />
-    <script src="js/jquery.min.js"></script>
-    <script async src="js/typed.min.js"></script>
-    <script async src="js/script.min.js"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/devicon.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css?v2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#607d8b">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <script src="assets/js/jquery.min.js"></script>
+    <script async src="assets/js/typed.min.js"></script>
+    <script async src="assets/js/script.min.js"></script>
     <title>LLEDev | Full-Stack-udvikling</title>
 </head>
 
@@ -28,7 +37,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
         <div id="inner-container">
             <div id="card">
                 <div id="avatar">
-                    <img src="img/lledev_small.jpg" title="LLEDev" alt="Billede af Lasse Lund-Egmose" />
+                    <img src="assets/img/lledev_small.jpg" title="LLEDev" alt="Billede af Lasse Lund-Egmose" />
                 </div>
                 <div id="top-line">
                     <!--TODO: Multiple languages-->
