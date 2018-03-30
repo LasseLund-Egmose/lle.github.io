@@ -48,7 +48,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 <hr />
                 <p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M. Jeg leder i øjeblikket efter job i mit kommende sabbatår.</p>
                 <p><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
-                <p><b>Skal vi samarbejde om dit eller din virksomheds næste IT-projekt?</b><br/>Tøv ikke med at kontakte mig! &mdash; Enten på mail <a href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a> eller ring til mig på tlf. <a href="tel:+4523902119">+4523902119</a>.</p>
+                <p><b>Skal vi samarbejde om dit eller din virksomheds næste IT-projekt?</b><br/>Tøv ikke med at kontakte mig! &mdash; Enten på mail <a href="mailto:llund-egmose@hotmail.com"><strong>llund-egmose@hotmail.com</strong></a> eller ring til mig på tlf. <a href="tel:+4523902119"><strong>+4523902119</strong></a>.</p>
                 <hr />
                 <div class="competence-container">
                     <i class="devicon-html5-plain-wordmark"></i>
