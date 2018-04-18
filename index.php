@@ -10,8 +10,9 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
 
 <head>
     <meta charset="utf-8" />
-    <meta name=”author” content="LLEDev - Lasse Lund-Egmose"/>
-    <meta name=”description” content="Udvikler,Full-stack, Website,Webshop,Bootstrap,IT-projekt,IT-hjælp,HTML5,JavaScript,CSS,jQuery,PHP,MySQL,NodeJS,GIT,Android,Docker,Java,Windows,Ubuntu,Linux,Apple" />
+    <meta name="author" content="LLEDev - Lasse Lund-Egmose"/>
+    <meta name="description" content="LLEDev - Full-Stack udvikling. Websites, Webshops og Ad-Hoc IT-projekter siden 2017."/>
+    <meta name="keywords" content="Udvikler,Full-stack, Website,Webshop,Bootstrap,IT-projekt,IT-hjælp,HTML5,JavaScript,CSS,jQuery,PHP,MySQL,NodeJS,GIT,Android,Docker,Java,Windows,Ubuntu,Linux,Apple" />
     <meta name="msapplication-TileColor" content="#607d8b">
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
