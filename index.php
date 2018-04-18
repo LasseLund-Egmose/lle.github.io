@@ -31,7 +31,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <script src="assets/js/jquery.min.js"></script>
     <script async src="assets/js/typed.min.js"></script>
     <script async src="assets/js/script.min.js"></script>
-    <title>LLEDev | Full-Stack-udvikling</title>
+    <title>LLEDev | Full-Stack udvikling</title>
 </head>
 
 <body>
