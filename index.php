@@ -74,9 +74,17 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 </div>
                 <hr />
                 <footer>
-                    <span class="footer-frame"><a href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a></span>
-                    <span class="footer-frame"><a href="tel:+4523902119">+45 23 90 21 19</a></span>
-                    <span class="footer-frame"><a href="https://linkedin.com/in/lledev" target="_blank">LinkedIn</a></span>
+                    <span class="footer-frame">
+                        <a class="show-md-up" href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a>
+                        <span class="show-sm-down">llund-egmose@hotmail.com</span>
+                    </span>
+                    <span class="footer-frame">
+                        <a class="show-md-up" href="tel:+4523902119">+45 23 90 21 19</a>
+                        <span class="show-sm-down">+45 23 90 21 19</span>
+                    </span>
+                    <span class="footer-frame">
+                        <a href="https://linkedin.com/in/lledev" target="_blank">LinkedIn</a>
+                    </span>
                 </footer>
             </div>
         </div>
