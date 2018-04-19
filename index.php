@@ -16,6 +16,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <meta name="keywords" content="Udvikler,Full-stack, Website,Webshop,Bootstrap,IT-projekt,IT-hjælp,HTML5,JavaScript,CSS,jQuery,PHP,MySQL,NodeJS,GIT,Android,Docker,Java,Windows,Ubuntu,Linux,Apple" />
     <meta name="msapplication-TileColor" content="#607d8b">
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+    <meta name="msvalidate.01" content="374B2A351DE3DFB75B60C85B3E4AD4D9" />
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.lledev.com/" />
