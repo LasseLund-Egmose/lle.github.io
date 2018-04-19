@@ -10,6 +10,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
 
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="content-language" content="da-DK">
     <meta name="author" content="LLEDev - Lasse Lund-Egmose"/>
     <meta name="description" content="LLEDev - Full-Stack udvikling. Websites, Webshops og Ad-Hoc IT-projekter siden 2017."/>
     <meta name="google-site-verification" content="FY3mRcq3drlydloSOt9yNW1MbWhihU_0CmByi9pJuAQ" />
@@ -45,9 +46,9 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 <div id="top-line">
                     <!--TODO: Multiple languages-->
                 </div>
-                <h1><span>Har</span>&nbsp;<span>du</span>&nbsp;<span>eller</span>&nbsp;<span>din</span>&nbsp;<span>virksomhed</span>&nbsp;<span>brug</span>&nbsp;<span>for...</span></h1>
-                <h1 id="typed" style="text-align:center;"><span>Et website?</span><span>En webshop?</span><span>En hjælpende hånd til det næste IT-projekt?</span></h1>
-                <h2><span>Mit</span>&nbsp;<span>navn</span>&nbsp;<span>er</span>&nbsp;<span>Lasse</span>&nbsp;<span>Lund-Egmose</span>&nbsp;<span>og</span>&nbsp;<span>jeg</span>&nbsp;<span>er</span>&nbsp;<span>klar</span>&nbsp;<span>til</span>&nbsp;<span>at</span>&nbsp;<span>hjælpe!</span></h2>
+                <h1><span>Har</span>&nbsp;<span>du</span>&nbsp;<span>eller</span>&nbsp;<span>din</span>&nbsp;<span>virksomhed</span>&nbsp;<span>brug</span>&nbsp;<span>for...</span>
+                <h2 id="typed" style="text-align:center;"><span>Et website?</span><span>En webshop?</span><span>En hjælpende hånd til det næste IT-projekt?</span></h1>
+                <h3><span>Mit</span>&nbsp;<span>navn</span>&nbsp;<span>er</span>&nbsp;<span>Lasse</span>&nbsp;<span>Lund-Egmose</span>&nbsp;<span>og</span>&nbsp;<span>jeg</span>&nbsp;<span>er</span>&nbsp;<span>klar</span>&nbsp;<span>til</span>&nbsp;<span>at</span>&nbsp;<span>hjælpe!</span></h3>
                 <hr />
                 <p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M. Jeg leder i øjeblikket efter job i mit kommende sabbatår.</p>
                 <p><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
