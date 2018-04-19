@@ -18,7 +18,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://lledev.com/" />
+    <link rel="canonical" href="https://www.lledev.com/" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/devicon.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css?v4" />
