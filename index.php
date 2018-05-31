@@ -50,10 +50,10 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 <h2 id="typed" style="text-align:center;"><span>Et website?</span><span>En webshop?</span><span>En hjælpende hånd til det næste IT-projekt?</span></h1>
                 <h3><span>Mit</span>&nbsp;<span>navn</span>&nbsp;<span>er</span>&nbsp;<span>Lasse</span>&nbsp;<span>Lund-Egmose</span>&nbsp;<span>og</span>&nbsp;<span>jeg</span>&nbsp;<span>er</span>&nbsp;<span>klar</span>&nbsp;<span>til</span>&nbsp;<span>at</span>&nbsp;<span>hjælpe!</span></h3>
                 <hr />
-                <p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M. Jeg leder i øjeblikket efter job i mit kommende sabbatår.</p>
+				<p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M.</p>
                 <p><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
-                <p><b>Skal vi samarbejde om dit eller din virksomheds næste IT-projekt?</b><br/>Tøv ikke med at kontakte mig! &mdash; Enten på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
-                <hr />
+                <p><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
+				<hr />
                 <div class="competence-container">
                     <i class="devicon-html5-plain-wordmark"></i>
                     <i class="devicon-javascript-plain"></i>
@@ -91,7 +91,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>
