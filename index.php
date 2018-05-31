@@ -23,37 +23,30 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <link rel="canonical" href="https://www.lledev.com/" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/devicon.min.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css?v5" />
+    <link rel="stylesheet" href="assets/css/style.min.css?v=310518" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/site.webmanifest">
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#607d8b">
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
-    <script src="assets/js/jquery.min.js"></script>
-    <script async src="assets/js/typed.min.js"></script>
-    <script async src="assets/js/script.min.js?v2"></script>
     <title>LLEDev | Full-Stack udvikling</title>
 </head>
 
 <body>
     <div id="container">
         <div id="inner-container">
-            <div id="card">
+            <div id="card" class="animated fadein">
                 <div id="avatar">
-                    <img src="assets/img/lledev_small.jpg" title="LLEDev" alt="Billede af Lasse Lund-Egmose" />
+                    <img src="assets/img/lledev_small.jpg" title="LLEDev" alt="Billede af LLEDev - Lasse Lund-Egmose" />
                 </div>
                 <div id="top-line">
                     <!--TODO: Multiple languages-->
                 </div>
-                <h1><span>Har</span>&nbsp;<span>du</span>&nbsp;<span>eller</span>&nbsp;<span>din</span>&nbsp;<span>virksomhed</span>&nbsp;<span>brug</span>&nbsp;<span>for...</span>
-                <h2 id="typed" style="text-align:center;"><span>Et website?</span><span>En webshop?</span><span>En hjælpende hånd til det næste IT-projekt?</span></h1>
-                <h3><span>Mit</span>&nbsp;<span>navn</span>&nbsp;<span>er</span>&nbsp;<span>Lasse</span>&nbsp;<span>Lund-Egmose</span>&nbsp;<span>og</span>&nbsp;<span>jeg</span>&nbsp;<span>er</span>&nbsp;<span>klar</span>&nbsp;<span>til</span>&nbsp;<span>at</span>&nbsp;<span>hjælpe!</span></h3>
-                <hr />
-				<p><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M.</p>
-                <p><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
-                <p><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
-				<hr />
+				<p id="first"><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M.</p>
+	            <p id="second"><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
+	            <p id="third"><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
+				<hr id="first" />
                 <div class="competence-container">
                     <i class="devicon-html5-plain-wordmark"></i>
                     <i class="devicon-javascript-plain"></i>
@@ -74,7 +67,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                     <i class="devicon-linux-plain"></i>
                     <i class="devicon-apple-plain"></i>
                 </div>
-                <hr />
+                <hr id="second" />
                 <footer>
                     <span class="footer-frame">
                         <a class="show-md-up" href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a>
