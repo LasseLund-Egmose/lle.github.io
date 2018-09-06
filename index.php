@@ -38,12 +38,12 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
         <div id="inner-container">
             <div id="card" class="animated fadein">
                 <div id="avatar">
-                    <img src="assets/img/lledev_small.jpg" title="LLEDev" alt="Billede af LLEDev - Lasse Lund-Egmose" />
+                    <img src="assets/img/lledev.jpg" title="LLEDev" alt="Billede af LLEDev - Lasse Lund-Egmose" />
                 </div>
                 <div id="top-line">
                     <!--TODO: Multiple languages-->
                 </div>
-				<p id="first"><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt studerer jeg på Sct. Knuds Gymnasium i Odense M.</p>
+				<p id="first"><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt arbejder jeg for webbureauet Morning Train placeret i Odense C.</p>
 	            <p id="second"><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
 	            <p id="third"><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
 				<hr id="first" />
