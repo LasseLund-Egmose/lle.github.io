@@ -83,7 +83,7 @@ html, body {
     font-size: .85rem;
 }
 
-#container>#inner-container>#card>p#first {
+#container>#inner-container>#card>p.first {
 	-webkit-animation: fadein 1s linear 1.1s forwards;
     -moz-animation: fadein 1s linear 1.1s forwards;
     -ms-animation: fadein 1s linear 1.1s forwards;
@@ -92,7 +92,7 @@ html, body {
     opacity: 0;
 }
 
-#container>#inner-container>#card>p#second {
+#container>#inner-container>#card>p.second {
 	-webkit-animation: fadein 1s linear 1.2s forwards;
     -moz-animation: fadein 1s linear 1.2s forwards;
     -ms-animation: fadein 1s linear 1.2s forwards;
@@ -101,7 +101,7 @@ html, body {
     opacity: 0;
 }
 
-#container>#inner-container>#card>p#third {
+#container>#inner-container>#card>p.third {
 	-webkit-animation: fadein 1s linear 1.3s forwards;
     -moz-animation: fadein 1s linear 1.3s forwards;
     -ms-animation: fadein 1s linear 1.3s forwards;
@@ -121,7 +121,7 @@ html, body {
     opacity: 0
 }
 
-#container>#inner-container>#card>hr#first {
+#container>#inner-container>#card>hr.first {
 	-webkit-animation: fadein 1s linear 1.4s forwards;
     -moz-animation: fadein 1s linear 1.4s forwards;
     -ms-animation: fadein 1s linear 1.4s forwards;
@@ -129,7 +129,7 @@ html, body {
     animation: fadein 0.5s linear 1.4s forwards;
 }
 
-#container>#inner-container>#card>hr#second {
+#container>#inner-container>#card>hr.second {
 	-webkit-animation: fadein 1s linear 1.6s forwards;
     -moz-animation: fadein 1s linear 1.6s forwards;
     -ms-animation: fadein 1s linear 1.6s forwards;

@@ -1,12 +1,5 @@
-<?php
-date_default_timezone_set('Europe/Copenhagen');
-$birthTimeStamp = 936144000;
-$currentDate = new DateTime(null, new DateTimeZone('Europe/Copenhagen'));
-$currentTimeStamp = $currentDate->getTimestamp();
-$yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25);
-?>
 <!DOCTYPE HTML>
-<html>
+<html lang="da">
 
 <head>
     <meta charset="utf-8" />
@@ -23,7 +16,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
     <link rel="canonical" href="https://www.lledev.com/" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/devicon.min.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css?v=310518" />
+    <link rel="stylesheet" href="assets/css/style.min.css?v=161221" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -43,10 +36,10 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                 <div id="top-line">
                     <!--TODO: Multiple languages-->
                 </div>
-				<p id="first"><b>Hvem er jeg?</b><br/>Jeg er <?php echo $yearsOld; ?> år og bosiddende i Odense. På nuværende tidspunkt arbejder jeg for webbureauet Morning Train placeret i Odense C.</p>
-	            <p id="second"><b>Full Stack-udvikler:</b><br/>Jeg har i den seneste årrække arbejdet særdeles meget med IT og programmering. Med et primært fokus på website-udvikling har jeg været vidt omkring &mdash; bl.a. med PHP- og MySQL-baseret backend-udvikling og Bootstrap- og jQuery-baseret frontend-udvikling af websites.</p>
-	            <p id="third"><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
-				<hr id="first" />
+				<p class="first"><b>Hvem er jeg?</b><br/>Jeg er 22 år og bosiddende i Kongens Lyngby. På nuværende tidspunkt studerer jeg på Danmarks Tekniske Universitet.</p>
+	            <p class="second">...</p>
+	            <p class="third"><b>Kontakt mig:</b><br/>Skriv til mig på mail llund-egmose@hotmail.com eller ring til mig på tlf. +4523902119.</p>
+				<hr class="first" />
                 <div class="competence-container">
                     <i class="devicon-html5-plain-wordmark"></i>
                     <i class="devicon-javascript-plain"></i>
@@ -67,7 +60,7 @@ $yearsOld = floor(($currentTimeStamp - $birthTimeStamp) / 60 / 60 / 24 / 365.25)
                     <i class="devicon-linux-plain"></i>
                     <i class="devicon-apple-plain"></i>
                 </div>
-                <hr id="second" />
+                <hr class="second" />
                 <footer>
                     <span class="footer-frame">
                         <a class="show-md-up" href="mailto:llund-egmose@hotmail.com">llund-egmose@hotmail.com</a>
