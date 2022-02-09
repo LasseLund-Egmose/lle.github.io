@@ -15,10 +15,10 @@ html, body {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    width: 35rem
+    width: 50rem
 }
 
-#container>#inner-container {
+#container #inner-container {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -26,12 +26,12 @@ html, body {
     width: 100%
 }
 
-#container>#inner-container>#card {
-	-webkit-animation: fadein 1s linear 0s forwards;
-    -moz-animation: fadein 1s linear 0s forwards;
-    -ms-animation: fadein 1s linear 0s forwards;
-    -o-animation: fadein 1s linear 0s forwards;
-    animation: fadein 1s linear 0s forwards;
+#container #inner-container #card {
+	-webkit-animation: fadein 0.5s linear 0s forwards;
+    -moz-animation: fadein 0.5s linear 0s forwards;
+    -ms-animation: fadein 0.5s linear 0s forwards;
+    -o-animation: fadein 0.5s linear 0s forwards;
+    animation: fadein 0.5s linear 0s forwards;
     background-color: #fff;
     border: .125rem solid #607d8b;
     border-radius: .125rem;
@@ -43,28 +43,18 @@ html, body {
     width: 100%
 }
 
-#container>#inner-container>#card>#top-line {
-    box-sizing: border-box;
-    height: 1.5rem;
-    margin-left: -2rem;
-    padding: .25rem .5rem;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-#container>#inner-container>#card>#avatar {
+#container #inner-container #card #avatar {
     background-color: #607d8b;
     -mox-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     box-shadow: 0 .1rem 1rem grey;
     height: 10rem;
-    margin: -3.75rem auto .5em;
+    margin: -3.75rem auto .5rem;
     width: 10rem
 }
 
-#container>#inner-container>#card>#avatar>img {
+#container #inner-container #card #avatar img {
 	-webkit-animation: fadein 0.5s linear 1s forwards;
     -moz-animation: fadein 0.5s linear 1s forwards;
     -ms-animation: fadein 0.5s linear 1s forwards;
@@ -79,90 +69,159 @@ html, body {
     width: 9.5rem
 }
 
-#container>#inner-container>#card>p {
+#container #inner-container #card p {
     font-size: .85rem;
 }
 
-#container>#inner-container>#card>p.first {
-	-webkit-animation: fadein 1s linear 1.1s forwards;
-    -moz-animation: fadein 1s linear 1.1s forwards;
-    -ms-animation: fadein 1s linear 1.1s forwards;
-    -o-animation: fadein 1s linear 1.1s forwards;
+#container #inner-container #card .fade-first {
+	-webkit-animation: fadein 0.5s linear 1.1s forwards;
+    -moz-animation: fadein 0.5s linear 1.1s forwards;
+    -ms-animation: fadein 0.5s linear 1.1s forwards;
+    -o-animation: fadein 0.5s linear 1.1s forwards;
     animation: fadein 0.5s linear 1.1s forwards;
     opacity: 0;
 }
 
-#container>#inner-container>#card>p.second {
-	-webkit-animation: fadein 1s linear 1.2s forwards;
-    -moz-animation: fadein 1s linear 1.2s forwards;
-    -ms-animation: fadein 1s linear 1.2s forwards;
-    -o-animation: fadein 1s linear 1.2s forwards;
+#container #inner-container #card .fade-second {
+	-webkit-animation: fadein 0.5s linear 1.2s forwards;
+    -moz-animation: fadein 0.5s linear 1.2s forwards;
+    -ms-animation: fadein 0.5s linear 1.2s forwards;
+    -o-animation: fadein 0.5s linear 1.2s forwards;
     animation: fadein 0.5s linear 1.2s forwards;
     opacity: 0;
 }
 
-#container>#inner-container>#card>p.third {
-	-webkit-animation: fadein 1s linear 1.3s forwards;
-    -moz-animation: fadein 1s linear 1.3s forwards;
-    -ms-animation: fadein 1s linear 1.3s forwards;
-    -o-animation: fadein 1s linear 1.3s forwards;
+#container #inner-container #card .fade-third {
+	-webkit-animation: fadein 0.5s linear 1.3s forwards;
+    -moz-animation: fadein 0.5s linear 1.3s forwards;
+    -ms-animation: fadein 0.5s linear 1.3s forwards;
+    -o-animation: fadein 0.5s linear 1.3s forwards;
     animation: fadein 0.5s linear 1.3s forwards;
     opacity: 0;
 }
 
-#container>#inner-container>#card>p>a {
+#container #inner-container #card .fade-fourth {
+	-webkit-animation: fadein 0.5s linear 1.4s forwards;
+    -moz-animation: fadein 0.5s linear 1.4s forwards;
+    -ms-animation: fadein 0.5s linear 1.4s forwards;
+    -o-animation: fadein 0.5s linear 1.4s forwards;
+    animation: fadein 0.5s linear 1.4s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card .fade-fifth {
+	-webkit-animation: fadein 0.5s linear 1.5s forwards;
+    -moz-animation: fadein 0.5s linear 1.5s forwards;
+    -ms-animation: fadein 0.5s linear 1.5s forwards;
+    -o-animation: fadein 0.5s linear 1.5s forwards;
+    animation: fadein 0.5s linear 1.5s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card .fade-sixth {
+	-webkit-animation: fadein 0.5s linear 1.6s forwards;
+    -moz-animation: fadein 0.5s linear 1.6s forwards;
+    -ms-animation: fadein 0.5s linear 1.6s forwards;
+    -o-animation: fadein 0.5s linear 1.6s forwards;
+    animation: fadein 0.5s linear 1.6s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card .fade-seventh {
+	-webkit-animation: fadein 0.5s linear 1.7s forwards;
+    -moz-animation: fadein 0.5s linear 1.7s forwards;
+    -ms-animation: fadein 0.5s linear 1.7s forwards;
+    -o-animation: fadein 0.5s linear 1.7s forwards;
+    animation: fadein 0.5s linear 1.7s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card a {
     color: #607d8b;
     text-decoration: none
 }
 
-#container>#inner-container>#card>hr {
+#container #inner-container #card .read-more p {
+    display: none;
+}
+
+#container #inner-container #card .read-more .toggler {
+    border-top: 0.1rem dashed #607d8b;
+    height: 0;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    opacity: 0.75;
+}
+
+#container #inner-container #card .read-more .toggler .toggler-inner {
+    background-color: #fff;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    padding: 0 1rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -0.425rem);
+    z-index: 5;
+}
+
+#container #inner-container #card .read-more .toggler .toggler-inner:before, #container #inner-container #card .read-more .toggler .toggler-inner:after {
+    border: solid #607d8b;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    left: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -0.5rem) rotate(-135deg);
+    -webkit-transform: translate(-50%, -0.5rem) rotate(-135deg);
+}
+
+#container #inner-container #card .read-more .toggler .toggler-inner:after {
+    bottom: 0;
+    top: initial;
+    transform: translate(-50%, 0.5rem) rotate(45deg);
+    -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
+}
+
+#container #inner-container #card .read-more.active p {
+    display: block;
+}
+
+#container #inner-container #card .read-more.active .toggler {
+    display: none;
+}
+
+#container #inner-container #card .read-more.active .fade-first {
+    -webkit-animation: fadein 0.5s linear 0s forwards;
+    -moz-animation: fadein 0.5s linear 0s forwards;
+    -ms-animation: fadein 0.5s linear 0s forwards;
+    -o-animation: fadein 0.5s linear 0s forwards;
+    animation: fadein 0.5s linear 0s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card .read-more.active .fade-second {
+    -webkit-animation: fadein 0.5s linear 0.2s forwards;
+    -moz-animation: fadein 0.5s linear 0.2s forwards;
+    -ms-animation: fadein 0.5s linear 0.2s forwards;
+    -o-animation: fadein 0.5s linear 0.2s forwards;
+    animation: fadein 0.5s linear 0.2s forwards;
+    opacity: 0;
+}
+
+#container #inner-container #card hr {
     border: 1px solid #607d8b;
     margin: .5rem 0;
-    opacity: 0
 }
 
-#container>#inner-container>#card>hr.first {
-	-webkit-animation: fadein 1s linear 1.4s forwards;
-    -moz-animation: fadein 1s linear 1.4s forwards;
-    -ms-animation: fadein 1s linear 1.4s forwards;
-    -o-animation: fadein 1s linear 1.4s forwards;
-    animation: fadein 0.5s linear 1.4s forwards;
-}
-
-#container>#inner-container>#card>hr.second {
-	-webkit-animation: fadein 1s linear 1.6s forwards;
-    -moz-animation: fadein 1s linear 1.6s forwards;
-    -ms-animation: fadein 1s linear 1.6s forwards;
-    -o-animation: fadein 1s linear 1.6s forwards;
-    animation: fadein 0.5s linear 1.6s forwards;
-}
-
-#container>#inner-container>#card>.competence-container {
-	-webkit-animation: fadein 1s linear 1.5s forwards;
-    -moz-animation: fadein 1s linear 1.5s forwards;
-    -ms-animation: fadein 1s linear 1.5s forwards;
-    -o-animation: fadein 1s linear 1.5s forwards;
-    animation: fadein 0.5s linear 1.5s forwards;
-    color: #607d8b;
-    display: flex;
-    font-size: 3rem;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    opacity: 0;
-    padding: .5rem 0
-}
-
-#container>#inner-container>#card>footer {
-	-webkit-animation: fadein 1s linear 1.7s forwards;
-    -moz-animation: fadein 1s linear 1.7s forwards;
-    -ms-animation: fadein 1s linear 1.7s forwards;
-    -o-animation: fadein 1s linear 1.7s forwards;
-    animation: fadein 0.5s linear 1.7s forwards;
+#container #inner-container #card footer {
     display: flex;
     font-size: .75rem;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    opacity: 0
 }
 
 #container>#inner-container>#card>footer>.footer-frame {
