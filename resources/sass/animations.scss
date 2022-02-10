@@ -1,0 +1,107 @@
+#card {
+  -webkit-animation: fadein 0.5s linear 0s forwards;
+  -moz-animation: fadein 0.5s linear 0s forwards;
+  -ms-animation: fadein 0.5s linear 0s forwards;
+  -o-animation: fadein 0.5s linear 0s forwards;
+  animation: fadein 0.5s linear 0s forwards;
+
+  #avatar img {
+    -webkit-animation: fadein 0.5s linear 1s forwards;
+    -moz-animation: fadein 0.5s linear 1s forwards;
+    -ms-animation: fadein 0.5s linear 1s forwards;
+    -o-animation: fadein 0.5s linear 1s forwards;
+    animation: fadein 0.5s linear 1s forwards;
+  }
+
+  .fade-first {
+    -webkit-animation: fadein 0.5s linear 1.1s forwards;
+    -moz-animation: fadein 0.5s linear 1.1s forwards;
+    -ms-animation: fadein 0.5s linear 1.1s forwards;
+    -o-animation: fadein 0.5s linear 1.1s forwards;
+    animation: fadein 0.5s linear 1.1s forwards;
+    opacity: 0;
+  }
+
+  .fade-second {
+    -webkit-animation: fadein 0.5s linear 1.2s forwards;
+    -moz-animation: fadein 0.5s linear 1.2s forwards;
+    -ms-animation: fadein 0.5s linear 1.2s forwards;
+    -o-animation: fadein 0.5s linear 1.2s forwards;
+    animation: fadein 0.5s linear 1.2s forwards;
+    opacity: 0;
+  }
+
+  .fade-third {
+    -webkit-animation: fadein 0.5s linear 1.3s forwards;
+    -moz-animation: fadein 0.5s linear 1.3s forwards;
+    -ms-animation: fadein 0.5s linear 1.3s forwards;
+    -o-animation: fadein 0.5s linear 1.3s forwards;
+    animation: fadein 0.5s linear 1.3s forwards;
+    opacity: 0;
+  }
+
+  .fade-fourth {
+    -webkit-animation: fadein 0.5s linear 1.4s forwards;
+    -moz-animation: fadein 0.5s linear 1.4s forwards;
+    -ms-animation: fadein 0.5s linear 1.4s forwards;
+    -o-animation: fadein 0.5s linear 1.4s forwards;
+    animation: fadein 0.5s linear 1.4s forwards;
+    opacity: 0;
+  }
+
+  .fade-fifth {
+    -webkit-animation: fadein 0.5s linear 1.5s forwards;
+    -moz-animation: fadein 0.5s linear 1.5s forwards;
+    -ms-animation: fadein 0.5s linear 1.5s forwards;
+    -o-animation: fadein 0.5s linear 1.5s forwards;
+    animation: fadein 0.5s linear 1.5s forwards;
+    opacity: 0;
+  }
+
+  .fade-sixth {
+    -webkit-animation: fadein 0.5s linear 1.6s forwards;
+    -moz-animation: fadein 0.5s linear 1.6s forwards;
+    -ms-animation: fadein 0.5s linear 1.6s forwards;
+    -o-animation: fadein 0.5s linear 1.6s forwards;
+    animation: fadein 0.5s linear 1.6s forwards;
+    opacity: 0;
+  }
+
+  .fade-seventh {
+    -webkit-animation: fadein 0.5s linear 1.7s forwards;
+    -moz-animation: fadein 0.5s linear 1.7s forwards;
+    -ms-animation: fadein 0.5s linear 1.7s forwards;
+    -o-animation: fadein 0.5s linear 1.7s forwards;
+    animation: fadein 0.5s linear 1.7s forwards;
+    opacity: 0;
+  }
+
+  .fade-eighth {
+    -webkit-animation: fadein 0.5s linear 1.8s forwards;
+    -moz-animation: fadein 0.5s linear 1.8s forwards;
+    -ms-animation: fadein 0.5s linear 1.8s forwards;
+    -o-animation: fadein 0.5s linear 1.8s forwards;
+    animation: fadein 0.5s linear 1.8s forwards;
+    opacity: 0;
+  }
+
+  .read-more.active {
+    .fade-first {
+      -webkit-animation: fadein 0.5s linear 0s forwards;
+      -moz-animation: fadein 0.5s linear 0s forwards;
+      -ms-animation: fadein 0.5s linear 0s forwards;
+      -o-animation: fadein 0.5s linear 0s forwards;
+      animation: fadein 0.5s linear 0s forwards;
+      opacity: 0;
+    }
+
+    .fade-second {
+      -webkit-animation: fadein 0.5s linear 0.2s forwards;
+      -moz-animation: fadein 0.5s linear 0.2s forwards;
+      -ms-animation: fadein 0.5s linear 0.2s forwards;
+      -o-animation: fadein 0.5s linear 0.2s forwards;
+      animation: fadein 0.5s linear 0.2s forwards;
+      opacity: 0;
+    }
+  }
+}
