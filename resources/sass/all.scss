@@ -1,6 +1,6 @@
 $PRIMARY-COLOR: #607d8b;
 $BACKGROUND-COLOR: lighten($PRIMARY-COLOR, 30%);
-
+$LIGHT: lighten($PRIMARY-COLOR, 40%);
 $SHADOW-COLOR: darken($PRIMARY-COLOR, 10%);
 
 @import "fonts";
@@ -34,9 +34,9 @@ html, body {
     @import "animations";
 
     #card {
-      background-color: #fff;
+      background-color: $LIGHT;
       border: .125rem solid $PRIMARY-COLOR;
-      border-radius: .125rem;
+      border-radius: .25rem;
       box-shadow: 0 0 2rem 0.05rem $SHADOW-COLOR;
       box-sizing: border-box;
       opacity: 0;
@@ -46,8 +46,6 @@ html, body {
 
       #avatar {
         background-color: $PRIMARY-COLOR;
-        -mox-border-radius: 50%;
-        -webkit-border-radius: 50%;
         border-radius: 50%;
         box-shadow: 0 .1rem 1rem $SHADOW-COLOR;
         height: 10rem;
@@ -55,8 +53,6 @@ html, body {
         width: 10rem;
 
         img {
-          -moz-border-radius: inherit;
-          -webkit-border-radius: inherit;
           border-radius: inherit;
           margin: .25rem;
           height: 9.5rem;
@@ -93,7 +89,7 @@ html, body {
           opacity: 0.75;
 
           .toggler-inner {
-            background-color: #fff;
+            background-color: $LIGHT;
             font-size: 0.75rem;
             line-height: 0.75rem;
             padding: 0 1rem;
@@ -152,14 +148,12 @@ html, body {
 
       .footer-frame {
         background-color: $PRIMARY-COLOR;
-        -mox-border-radius: .5rem;
-        -webkit-border-radius: .5rem;
-        border-radius: .2rem;
-        color: #fff;
+        border-radius: .25rem;
+        color: $LIGHT;
         padding: .3rem 1.2rem;
 
         a {
-          color: #fff!important;
+          color: $LIGHT !important;
           text-decoration: none
         }
       }
@@ -174,13 +168,6 @@ html, body {
 
 .show-sm-down {
   display: none;
-}
-
-.emoji {
-  font-size: 2em;
-  line-height: 1em;
-  padding-right: 0.5em;
-  vertical-align: sub;
 }
 
 @media screen and (max-height:52rem) {

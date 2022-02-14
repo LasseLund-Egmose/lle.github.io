@@ -187,9 +187,9 @@ html, body {
   opacity: 0;
 }
 #container #inner-container #card {
-  background-color: #fff;
+  background-color: #d5dee2;
   border: 0.125rem solid #607d8b;
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   box-shadow: 0 0 2rem 0.05rem #4b626d;
   box-sizing: border-box;
   opacity: 0;
@@ -199,8 +199,6 @@ html, body {
 }
 #container #inner-container #card #avatar {
   background-color: #607d8b;
-  -mox-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   box-shadow: 0 0.1rem 1rem #4b626d;
   height: 10rem;
@@ -208,8 +206,6 @@ html, body {
   width: 10rem;
 }
 #container #inner-container #card #avatar img {
-  -moz-border-radius: inherit;
-  -webkit-border-radius: inherit;
   border-radius: inherit;
   margin: 0.25rem;
   height: 9.5rem;
@@ -238,7 +234,7 @@ html, body {
   opacity: 0.75;
 }
 #container #inner-container #card .read-more .toggler .toggler-inner {
-  background-color: #fff;
+  background-color: #d5dee2;
   font-size: 0.75rem;
   line-height: 0.75rem;
   padding: 0 1rem;
@@ -284,14 +280,12 @@ html, body {
 }
 #container #inner-container footer .footer-frame {
   background-color: #607d8b;
-  -mox-border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  border-radius: 0.2rem;
-  color: #fff;
+  border-radius: 0.25rem;
+  color: #d5dee2;
   padding: 0.3rem 1.2rem;
 }
 #container #inner-container footer .footer-frame a {
-  color: #fff !important;
+  color: #d5dee2 !important;
   text-decoration: none;
 }
 
@@ -301,13 +295,6 @@ html, body {
 
 .show-sm-down {
   display: none;
-}
-
-.emoji {
-  font-size: 2em;
-  line-height: 1em;
-  padding-right: 0.5em;
-  vertical-align: sub;
 }
 
 @media screen and (max-height: 52rem) {
