@@ -15,7 +15,7 @@ $CARD-OFFSET: 0.6 * $AVATAR-OFFSET;
 html, body {
   background-color: $BACKGROUND-COLOR;
   display: flex;
-  font-family: 'Gotham Book', sans-serif;
+  font-family: 'Gotham', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -63,7 +63,7 @@ html, body {
 
     b {
       color: $PRIMARY-COLOR;
-      font-family: "Gotham Bold", sans-serif;
+      font-weight: bold;
     }
 
     a {
