@@ -5,10 +5,10 @@
   src: local("Gotham Book"), url("../fonts/GothamBook.woff") format("woff");
 }
 @font-face {
-  font-family: "Gotham Bold";
+  font-family: "Gotham Book Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("Gotham Bold"), url("../fonts/GothamBold.woff") format("woff");
+  src: local("Gotham Book Italic"), url("../fonts/GothamBookItalic.woff") format("woff");
 }
 @font-face {
   font-family: "Gotham Light";
@@ -17,10 +17,94 @@
   src: local("Gotham Light"), url("../fonts/GothamLight.woff") format("woff");
 }
 @font-face {
-  font-family: "Gotham Black";
+  font-family: "Gotham Light Italic";
   font-style: normal;
   font-weight: normal;
-  src: local("Gotham Black"), url("../fonts/GothamBlack.woff") format("woff");
+  src: local("Gotham Light Italic"), url("../fonts/GothamLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Medium"), url("../fonts/GothamMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Medium"), url("../fonts/GothamMedium_1.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Medium"), url("../fonts/GothamMediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Bold"), url("../fonts/GothamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Bold"), url("../fonts/Gotham-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Bold Italic"), url("../fonts/GothamBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Black Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Black Regular"), url("../fonts/Gotham-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Light Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Light Regular"), url("../fonts/Gotham-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Thin Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Thin Regular"), url("../fonts/Gotham-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham XLight Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham XLight Regular"), url("../fonts/Gotham-XLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Book Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Book Italic"), url("../fonts/Gotham-BookItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Thin Italic"), url("../fonts/Gotham-ThinItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Ultra Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Ultra Italic"), url("../fonts/Gotham-UltraItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham XLight Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham XLight Italic"), url("../fonts/Gotham-XLightItalic.woff") format("woff");
 }
 * {
   -webkit-backface-visibility: hidden;
@@ -40,142 +124,6 @@ html, body {
   margin: auto;
   padding: 4.125rem 1rem 2.25rem 1rem;
   width: 50rem;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#container #card {
-  -webkit-animation: fadein 0.5s linear 0s forwards;
-  -moz-animation: fadein 0.5s linear 0s forwards;
-  -ms-animation: fadein 0.5s linear 0s forwards;
-  -o-animation: fadein 0.5s linear 0s forwards;
-  animation: fadein 0.5s linear 0s forwards;
-  opacity: 0;
-}
-#container #card #avatar img {
-  -webkit-animation: fadein 0.5s linear 1s forwards;
-  -moz-animation: fadein 0.5s linear 1s forwards;
-  -ms-animation: fadein 0.5s linear 1s forwards;
-  -o-animation: fadein 0.5s linear 1s forwards;
-  animation: fadein 0.5s linear 1s forwards;
-  opacity: 0;
-}
-#container #card .fade-first {
-  -webkit-animation: fadein 0.5s linear 1.1s forwards;
-  -moz-animation: fadein 0.5s linear 1.1s forwards;
-  -ms-animation: fadein 0.5s linear 1.1s forwards;
-  -o-animation: fadein 0.5s linear 1.1s forwards;
-  animation: fadein 0.5s linear 1.1s forwards;
-  opacity: 0;
-}
-#container #card .fade-second {
-  -webkit-animation: fadein 0.5s linear 1.2s forwards;
-  -moz-animation: fadein 0.5s linear 1.2s forwards;
-  -ms-animation: fadein 0.5s linear 1.2s forwards;
-  -o-animation: fadein 0.5s linear 1.2s forwards;
-  animation: fadein 0.5s linear 1.2s forwards;
-  opacity: 0;
-}
-#container #card .fade-third {
-  -webkit-animation: fadein 0.5s linear 1.3s forwards;
-  -moz-animation: fadein 0.5s linear 1.3s forwards;
-  -ms-animation: fadein 0.5s linear 1.3s forwards;
-  -o-animation: fadein 0.5s linear 1.3s forwards;
-  animation: fadein 0.5s linear 1.3s forwards;
-  opacity: 0;
-}
-#container #card .fade-fourth {
-  -webkit-animation: fadein 0.5s linear 1.4s forwards;
-  -moz-animation: fadein 0.5s linear 1.4s forwards;
-  -ms-animation: fadein 0.5s linear 1.4s forwards;
-  -o-animation: fadein 0.5s linear 1.4s forwards;
-  animation: fadein 0.5s linear 1.4s forwards;
-  opacity: 0;
-}
-#container #card .fade-fifth {
-  -webkit-animation: fadein 0.5s linear 1.5s forwards;
-  -moz-animation: fadein 0.5s linear 1.5s forwards;
-  -ms-animation: fadein 0.5s linear 1.5s forwards;
-  -o-animation: fadein 0.5s linear 1.5s forwards;
-  animation: fadein 0.5s linear 1.5s forwards;
-  opacity: 0;
-}
-#container #card .fade-sixth {
-  -webkit-animation: fadein 0.5s linear 1.6s forwards;
-  -moz-animation: fadein 0.5s linear 1.6s forwards;
-  -ms-animation: fadein 0.5s linear 1.6s forwards;
-  -o-animation: fadein 0.5s linear 1.6s forwards;
-  animation: fadein 0.5s linear 1.6s forwards;
-  opacity: 0;
-}
-#container #card .fade-seventh {
-  -webkit-animation: fadein 0.5s linear 1.7s forwards;
-  -moz-animation: fadein 0.5s linear 1.7s forwards;
-  -ms-animation: fadein 0.5s linear 1.7s forwards;
-  -o-animation: fadein 0.5s linear 1.7s forwards;
-  animation: fadein 0.5s linear 1.7s forwards;
-  opacity: 0;
-}
-#container #card .fade-eighth {
-  -webkit-animation: fadein 0.5s linear 1.8s forwards;
-  -moz-animation: fadein 0.5s linear 1.8s forwards;
-  -ms-animation: fadein 0.5s linear 1.8s forwards;
-  -o-animation: fadein 0.5s linear 1.8s forwards;
-  animation: fadein 0.5s linear 1.8s forwards;
-  opacity: 0;
-}
-#container #card .read-more.active .fade-first {
-  -webkit-animation: fadein 0.5s linear 0s forwards;
-  -moz-animation: fadein 0.5s linear 0s forwards;
-  -ms-animation: fadein 0.5s linear 0s forwards;
-  -o-animation: fadein 0.5s linear 0s forwards;
-  animation: fadein 0.5s linear 0s forwards;
-  opacity: 0;
-}
-#container #card .read-more.active .fade-second {
-  -webkit-animation: fadein 0.5s linear 0.2s forwards;
-  -moz-animation: fadein 0.5s linear 0.2s forwards;
-  -ms-animation: fadein 0.5s linear 0.2s forwards;
-  -o-animation: fadein 0.5s linear 0.2s forwards;
-  animation: fadein 0.5s linear 0.2s forwards;
-  opacity: 0;
 }
 #container #card {
   background-color: #d5dee2;
@@ -203,7 +151,7 @@ html, body {
 }
 #container #card h1 {
   color: #607d8b;
-  font-family: "Gotham Black", sans-serif;
+  font-family: "Gotham Black Regular", sans-serif;
 }
 #container #card b {
   color: #607d8b;

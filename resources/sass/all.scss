@@ -27,7 +27,7 @@ html, body {
   padding: ($CARD-OFFSET + 0.5 * $AVATAR-OFFSET) 1rem $CARD-OFFSET 1rem;
   width: 50rem;
 
-  @import "animations";
+  // @import "animations";
 
   #card {
     background-color: $LIGHT;
@@ -58,7 +58,7 @@ html, body {
 
     h1 {
       color: $PRIMARY-COLOR;
-      font-family: "Gotham Black", sans-serif;
+      font-family: "Gotham Black Regular", sans-serif;
     }
 
     b {
