@@ -15,7 +15,7 @@ $CARD-OFFSET: 0.6 * $AVATAR-OFFSET;
 html, body {
   background-color: $BACKGROUND-COLOR;
   display: flex;
-  font-family: 'Gotham', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ html, body {
   padding: ($CARD-OFFSET + 0.5 * $AVATAR-OFFSET) 1rem $CARD-OFFSET 1rem;
   width: 50rem;
 
-  // @import "animations";
+  @import "animations";
 
   #card {
     background-color: $LIGHT;
@@ -58,7 +58,7 @@ html, body {
 
     h1 {
       color: $PRIMARY-COLOR;
-      font-family: "Gotham Black", sans-serif;
+      font-weight: 900;
     }
 
     b {
@@ -138,8 +138,8 @@ html, body {
 
   footer {
     display: flex;
-    font-family: "Gotham Bold", sans-serif;
     font-size: .8rem;
+    font-weight: bold;
     -webkit-justify-content: space-between;
     justify-content: space-between;
 
