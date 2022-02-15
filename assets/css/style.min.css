@@ -1,30 +1,45 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Gotham Book";
   font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/open-sans-v15-latin-regular.eot);
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(../fonts/open-sans-v15-latin-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/open-sans-v15-latin-regular.woff2) format("woff2"), url(../fonts/open-sans-v15-latin-regular.woff) format("woff"), url(../fonts/open-sans-v15-latin-regular.ttf) format("truetype"), url(../fonts/open-sans-v15-latin-regular.svg#OpenSans) format("svg");
+  font-weight: normal;
+  src: local("Gotham Book"), url("../fonts/GothamBook.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url(../fonts/open-sans-v15-latin-italic.eot);
-  src: local("Open Sans Italic"), local("OpenSans-Italic"), url(../fonts/open-sans-v15-latin-italic.eot?#iefix) format("embedded-opentype"), url(../fonts/open-sans-v15-latin-italic.woff2) format("woff2"), url(../fonts/open-sans-v15-latin-italic.woff) format("woff"), url(../fonts/open-sans-v15-latin-italic.ttf) format("truetype"), url(../fonts/open-sans-v15-latin-italic.svg#OpenSans) format("svg");
-}
-@font-face {
-  font-family: "Open Sans";
+  font-family: "Gotham Bold";
   font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/open-sans-v15-latin-700.eot);
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(../fonts/open-sans-v15-latin-700.eot?#iefix) format("embedded-opentype"), url(../fonts/open-sans-v15-latin-700.woff2) format("woff2"), url(../fonts/open-sans-v15-latin-700.woff) format("woff"), url(../fonts/open-sans-v15-latin-700.ttf) format("truetype"), url(../fonts/open-sans-v15-latin-700.svg#OpenSans) format("svg");
+  font-weight: normal;
+  src: local("Gotham Bold"), url("../fonts/GothamBold.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url(../fonts/open-sans-v15-latin-700italic.eot);
-  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(../fonts/open-sans-v15-latin-700italic.eot?#iefix) format("embedded-opentype"), url(../fonts/open-sans-v15-latin-700italic.woff2) format("woff2"), url(../fonts/open-sans-v15-latin-700italic.woff) format("woff"), url(../fonts/open-sans-v15-latin-700italic.ttf) format("truetype"), url(../fonts/open-sans-v15-latin-700italic.svg#OpenSans) format("svg");
+  font-family: "Gotham Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Light"), url("../fonts/GothamLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Black"), url("../fonts/GothamBlack.woff") format("woff");
+}
+* {
+  -webkit-backface-visibility: hidden;
+}
+
+html, body {
+  background-color: #b7c6cd;
+  display: flex;
+  font-family: "Gotham Book", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#container {
+  margin: auto;
+  padding: 4.125rem 1rem 2.25rem 1rem;
+  width: 50rem;
 }
 @keyframes fadein {
   from {
@@ -66,47 +81,23 @@
     opacity: 1;
   }
 }
-* {
-  -webkit-backface-visibility: hidden;
-}
-
-html, body {
-  background-color: #b7c6cd;
-  font-family: "Open Sans", sans-serif;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-}
-
-#container {
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  width: 50rem;
-}
-#container #inner-container {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
-}
-#container #inner-container #card {
+#container #card {
   -webkit-animation: fadein 0.5s linear 0s forwards;
   -moz-animation: fadein 0.5s linear 0s forwards;
   -ms-animation: fadein 0.5s linear 0s forwards;
   -o-animation: fadein 0.5s linear 0s forwards;
   animation: fadein 0.5s linear 0s forwards;
+  opacity: 0;
 }
-#container #inner-container #card #avatar img {
+#container #card #avatar img {
   -webkit-animation: fadein 0.5s linear 1s forwards;
   -moz-animation: fadein 0.5s linear 1s forwards;
   -ms-animation: fadein 0.5s linear 1s forwards;
   -o-animation: fadein 0.5s linear 1s forwards;
   animation: fadein 0.5s linear 1s forwards;
+  opacity: 0;
 }
-#container #inner-container #card .fade-first {
+#container #card .fade-first {
   -webkit-animation: fadein 0.5s linear 1.1s forwards;
   -moz-animation: fadein 0.5s linear 1.1s forwards;
   -ms-animation: fadein 0.5s linear 1.1s forwards;
@@ -114,7 +105,7 @@ html, body {
   animation: fadein 0.5s linear 1.1s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-second {
+#container #card .fade-second {
   -webkit-animation: fadein 0.5s linear 1.2s forwards;
   -moz-animation: fadein 0.5s linear 1.2s forwards;
   -ms-animation: fadein 0.5s linear 1.2s forwards;
@@ -122,7 +113,7 @@ html, body {
   animation: fadein 0.5s linear 1.2s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-third {
+#container #card .fade-third {
   -webkit-animation: fadein 0.5s linear 1.3s forwards;
   -moz-animation: fadein 0.5s linear 1.3s forwards;
   -ms-animation: fadein 0.5s linear 1.3s forwards;
@@ -130,7 +121,7 @@ html, body {
   animation: fadein 0.5s linear 1.3s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-fourth {
+#container #card .fade-fourth {
   -webkit-animation: fadein 0.5s linear 1.4s forwards;
   -moz-animation: fadein 0.5s linear 1.4s forwards;
   -ms-animation: fadein 0.5s linear 1.4s forwards;
@@ -138,7 +129,7 @@ html, body {
   animation: fadein 0.5s linear 1.4s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-fifth {
+#container #card .fade-fifth {
   -webkit-animation: fadein 0.5s linear 1.5s forwards;
   -moz-animation: fadein 0.5s linear 1.5s forwards;
   -ms-animation: fadein 0.5s linear 1.5s forwards;
@@ -146,7 +137,7 @@ html, body {
   animation: fadein 0.5s linear 1.5s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-sixth {
+#container #card .fade-sixth {
   -webkit-animation: fadein 0.5s linear 1.6s forwards;
   -moz-animation: fadein 0.5s linear 1.6s forwards;
   -ms-animation: fadein 0.5s linear 1.6s forwards;
@@ -154,7 +145,7 @@ html, body {
   animation: fadein 0.5s linear 1.6s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-seventh {
+#container #card .fade-seventh {
   -webkit-animation: fadein 0.5s linear 1.7s forwards;
   -moz-animation: fadein 0.5s linear 1.7s forwards;
   -ms-animation: fadein 0.5s linear 1.7s forwards;
@@ -162,7 +153,7 @@ html, body {
   animation: fadein 0.5s linear 1.7s forwards;
   opacity: 0;
 }
-#container #inner-container #card .fade-eighth {
+#container #card .fade-eighth {
   -webkit-animation: fadein 0.5s linear 1.8s forwards;
   -moz-animation: fadein 0.5s linear 1.8s forwards;
   -ms-animation: fadein 0.5s linear 1.8s forwards;
@@ -170,7 +161,7 @@ html, body {
   animation: fadein 0.5s linear 1.8s forwards;
   opacity: 0;
 }
-#container #inner-container #card .read-more.active .fade-first {
+#container #card .read-more.active .fade-first {
   -webkit-animation: fadein 0.5s linear 0s forwards;
   -moz-animation: fadein 0.5s linear 0s forwards;
   -ms-animation: fadein 0.5s linear 0s forwards;
@@ -178,7 +169,7 @@ html, body {
   animation: fadein 0.5s linear 0s forwards;
   opacity: 0;
 }
-#container #inner-container #card .read-more.active .fade-second {
+#container #card .read-more.active .fade-second {
   -webkit-animation: fadein 0.5s linear 0.2s forwards;
   -moz-animation: fadein 0.5s linear 0.2s forwards;
   -ms-animation: fadein 0.5s linear 0.2s forwards;
@@ -186,18 +177,17 @@ html, body {
   animation: fadein 0.5s linear 0.2s forwards;
   opacity: 0;
 }
-#container #inner-container #card {
+#container #card {
   background-color: #d5dee2;
   border: 0.125rem solid #607d8b;
   border-radius: 0.25rem;
   box-shadow: 0 0 2rem 0.05rem #4b626d;
   box-sizing: border-box;
-  opacity: 0;
   padding: 0 2rem 1.5rem 2rem;
   position: relative;
   width: 100%;
 }
-#container #inner-container #card #avatar {
+#container #card #avatar {
   background-color: #607d8b;
   border-radius: 50%;
   box-shadow: 0 0.1rem 1rem #4b626d;
@@ -205,27 +195,28 @@ html, body {
   margin: -3.75rem auto 0.5rem;
   width: 10rem;
 }
-#container #inner-container #card #avatar img {
+#container #card #avatar img {
   border-radius: inherit;
   margin: 0.25rem;
   height: 9.5rem;
-  opacity: 0;
   width: 9.5rem;
 }
-#container #inner-container #card p {
-  font-size: 0.85rem;
+#container #card h1 {
+  color: #607d8b;
+  font-family: "Gotham Black", sans-serif;
 }
-#container #inner-container #card p.large {
-  font-size: 1.2rem;
+#container #card b {
+  color: #607d8b;
+  font-family: "Gotham Bold", sans-serif;
 }
-#container #inner-container #card a {
+#container #card a {
   color: #607d8b;
   text-decoration: none;
 }
-#container #inner-container #card .read-more p {
+#container #card .read-more p {
   display: none;
 }
-#container #inner-container #card .read-more .toggler {
+#container #card .read-more .toggler {
   border-top: 0.1rem dashed #607d8b;
   height: 0;
   margin-top: 2rem;
@@ -233,7 +224,7 @@ html, body {
   position: relative;
   opacity: 0.75;
 }
-#container #inner-container #card .read-more .toggler .toggler-inner {
+#container #card .read-more .toggler .toggler-inner {
   background-color: #d5dee2;
   font-size: 0.75rem;
   line-height: 0.75rem;
@@ -244,7 +235,7 @@ html, body {
   transform: translate(-50%, -0.425rem);
   z-index: 5;
 }
-#container #inner-container #card .read-more .toggler .toggler-inner:before, #container #inner-container #card .read-more .toggler .toggler-inner:after {
+#container #card .read-more .toggler .toggler-inner:before, #container #card .read-more .toggler .toggler-inner:after {
   border: solid #607d8b;
   border-width: 0 2px 2px 0;
   content: "";
@@ -256,35 +247,36 @@ html, body {
   transform: translate(-50%, -0.5rem) rotate(-135deg);
   -webkit-transform: translate(-50%, -0.5rem) rotate(-135deg);
 }
-#container #inner-container #card .read-more .toggler .toggler-inner:after {
+#container #card .read-more .toggler .toggler-inner:after {
   bottom: 0;
   top: initial;
   transform: translate(-50%, 0.5rem) rotate(45deg);
   -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
 }
-#container #inner-container #card .read-more.active p {
+#container #card .read-more.active p {
   display: block;
 }
-#container #inner-container #card .read-more.active .toggler {
+#container #card .read-more.active .toggler {
   display: none;
 }
-#container #inner-container hr {
+#container hr {
   border: 1px solid #607d8b;
   margin: 1.2rem 0;
 }
-#container #inner-container footer {
+#container footer {
   display: flex;
-  font-size: 0.75rem;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 0.8rem;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-#container #inner-container footer .footer-frame {
+#container footer .footer-frame {
   background-color: #607d8b;
   border-radius: 0.25rem;
   color: #d5dee2;
   padding: 0.3rem 1.2rem;
 }
-#container #inner-container footer .footer-frame a {
+#container footer .footer-frame a {
   color: #d5dee2 !important;
   text-decoration: none;
 }
@@ -297,46 +289,14 @@ html, body {
   display: none;
 }
 
-@media screen and (max-height: 52rem) {
-  body {
-    overflow-y: auto;
-  }
-
-  #container {
-    height: auto;
-  }
-  #container #inner-container {
-    margin: 4rem 0;
-    position: static;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 @media screen and (max-width: 576px) {
-  body {
-    overflow-y: auto;
-  }
-
-  #container {
-    height: auto;
-    width: 90%;
-  }
-  #container #inner-container {
-    margin: 4rem 0;
-    position: static;
-    -webkit-transform: none;
-    transform: none;
-  }
-  #container #card footer, #container #card h1, #container #card h3 {
+  #container #card footer {
     display: block;
-  }
-  #container #card .competence-container {
-    font-size: 2rem;
   }
   #container #card footer .footer-frame {
     display: block;
     margin: 0.2rem 0;
-    padding: 0.1rem 0;
+    padding: 0.4rem 0;
     text-align: center;
     width: 100%;
   }

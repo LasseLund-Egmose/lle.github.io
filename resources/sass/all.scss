@@ -3,6 +3,9 @@ $BACKGROUND-COLOR: lighten($PRIMARY-COLOR, 30%);
 $LIGHT: lighten($PRIMARY-COLOR, 40%);
 $SHADOW-COLOR: darken($PRIMARY-COLOR, 10%);
 
+$AVATAR-OFFSET: 3.75rem;
+$CARD-OFFSET: 0.6 * $AVATAR-OFFSET;
+
 @import "fonts";
 
 * {
@@ -11,154 +14,146 @@ $SHADOW-COLOR: darken($PRIMARY-COLOR, 10%);
 
 html, body {
   background-color: $BACKGROUND-COLOR;
-  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  font-family: 'Gotham Book', sans-serif;
   height: 100%;
   margin: 0;
-  overflow: hidden;
-  padding: 0
+  padding: 0;
+  width: 100%;
 }
 
 #container {
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
+  margin: auto;
+  padding: ($CARD-OFFSET + 0.5 * $AVATAR-OFFSET) 1rem $CARD-OFFSET 1rem;
   width: 50rem;
 
-  #inner-container {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+  @import "animations";
+
+  #card {
+    background-color: $LIGHT;
+    border: .125rem solid $PRIMARY-COLOR;
+    border-radius: .25rem;
+    box-shadow: 0 0 2rem 0.05rem $SHADOW-COLOR;
+    box-sizing: border-box;
+    padding: 0 2rem 1.5rem 2rem;
+    position: relative;
     width: 100%;
 
-    @import "animations";
+    #avatar {
+      background-color: $PRIMARY-COLOR;
+      border-radius: 50%;
+      box-shadow: 0 .1rem 1rem $SHADOW-COLOR;
+      height: 10rem;
+      margin: (-$AVATAR-OFFSET) auto .5rem;
+      width: 10rem;
 
-    #card {
-      background-color: $LIGHT;
-      border: .125rem solid $PRIMARY-COLOR;
-      border-radius: .25rem;
-      box-shadow: 0 0 2rem 0.05rem $SHADOW-COLOR;
-      box-sizing: border-box;
-      opacity: 0;
-      padding: 0 2rem 1.5rem 2rem;
-      position: relative;
-      width: 100%;
-
-      #avatar {
-        background-color: $PRIMARY-COLOR;
-        border-radius: 50%;
-        box-shadow: 0 .1rem 1rem $SHADOW-COLOR;
-        height: 10rem;
-        margin: -3.75rem auto .5rem;
-        width: 10rem;
-
-        img {
-          border-radius: inherit;
-          margin: .25rem;
-          height: 9.5rem;
-          opacity: 0;
-          width: 9.5rem
-        }
-
+      img {
+        border-radius: inherit;
+        margin: .25rem;
+        height: 9.5rem;
+        width: 9.5rem
       }
 
+    }
+
+    h1 {
+      color: $PRIMARY-COLOR;
+      font-family: "Gotham Black", sans-serif;
+    }
+
+    b {
+      color: $PRIMARY-COLOR;
+      font-family: "Gotham Bold", sans-serif;
+    }
+
+    a {
+      color: $PRIMARY-COLOR;
+      text-decoration: none
+    }
+
+    .read-more {
       p {
-        font-size: .85rem;
+        display: none;
+      }
 
-        &.large {
-          font-size: 1.2rem;
+      .toggler {
+        border-top: 0.1rem dashed $PRIMARY-COLOR;
+        height: 0;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        position: relative;
+        opacity: 0.75;
+
+        .toggler-inner {
+          background-color: $LIGHT;
+          font-size: 0.75rem;
+          line-height: 0.75rem;
+          padding: 0 1rem;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, -0.425rem);
+          z-index: 5;
+
+          &:before, &:after {
+            border: solid $PRIMARY-COLOR;
+            border-width: 0 2px 2px 0;
+            content: "";
+            display: inline-block;
+            left: 50%;
+            padding: 3px;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%, -0.5rem) rotate(-135deg);
+            -webkit-transform: translate(-50%, -0.5rem) rotate(-135deg);
+          }
+
+          &:after {
+            bottom: 0;
+            top: initial;
+            transform: translate(-50%, 0.5rem) rotate(45deg);
+            -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
+          }
         }
       }
 
-      a {
-        color: $PRIMARY-COLOR;
-        text-decoration: none
-      }
-
-      .read-more {
+      &.active {
         p {
-          display: none;
+          display: block;
         }
 
         .toggler {
-          border-top: 0.1rem dashed $PRIMARY-COLOR;
-          height: 0;
-          margin-top: 2rem;
-          padding-top: 2rem;
-          position: relative;
-          opacity: 0.75;
-
-          .toggler-inner {
-            background-color: $LIGHT;
-            font-size: 0.75rem;
-            line-height: 0.75rem;
-            padding: 0 1rem;
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%, -0.425rem);
-            z-index: 5;
-
-            &:before, &:after {
-              border: solid $PRIMARY-COLOR;
-              border-width: 0 2px 2px 0;
-              content: "";
-              display: inline-block;
-              left: 50%;
-              padding: 3px;
-              position: absolute;
-              top: 0;
-              transform: translate(-50%, -0.5rem) rotate(-135deg);
-              -webkit-transform: translate(-50%, -0.5rem) rotate(-135deg);
-            }
-
-            &:after {
-              bottom: 0;
-              top: initial;
-              transform: translate(-50%, 0.5rem) rotate(45deg);
-              -webkit-transform: translate(-50%, 0.5rem) rotate(45deg);
-            }
-          }
-        }
-
-        &.active {
-          p {
-            display: block;
-          }
-
-          .toggler {
-            display: none;
-          }
-        }
-
-      }
-
-    }
-
-    hr {
-      border: 1px solid $PRIMARY-COLOR;
-      margin: 1.2rem 0;
-    }
-
-    footer {
-      display: flex;
-      font-size: .75rem;
-      -webkit-justify-content: space-between;
-      justify-content: space-between;
-
-      .footer-frame {
-        background-color: $PRIMARY-COLOR;
-        border-radius: .25rem;
-        color: $LIGHT;
-        padding: .3rem 1.2rem;
-
-        a {
-          color: $LIGHT !important;
-          text-decoration: none
+          display: none;
         }
       }
+
     }
 
+  }
+
+  hr {
+    border: 1px solid $PRIMARY-COLOR;
+    margin: 1.2rem 0;
+  }
+
+  footer {
+    display: flex;
+    font-family: "Gotham Bold", sans-serif;
+    font-size: .8rem;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+    .footer-frame {
+      background-color: $PRIMARY-COLOR;
+      border-radius: .25rem;
+      color: $LIGHT;
+      padding: .3rem 1.2rem;
+
+      a {
+        color: $LIGHT !important;
+        text-decoration: none
+      }
+    }
   }
 }
 
@@ -170,54 +165,16 @@ html, body {
   display: none;
 }
 
-@media screen and (max-height:52rem) {
-  body {
-    overflow-y: auto;
-  }
-  #container {
-    height: auto;
-
-    #inner-container {
-      margin: 4rem 0;
-      position: static;
-      -webkit-transform: none;
-      transform: none
-    }
-  }
-}
-
 @media screen and (max-width:576px) {
-  body {
-    overflow-y: auto
-  }
+  #container #card footer {
+    display: block;
 
-  #container {
-    height: auto;
-    width: 90%;
-
-    #inner-container {
-      margin: 4rem 0;
-      position: static;
-      -webkit-transform: none;
-      transform: none
-    }
-
-    #card {
-      footer, h1, h3 {
-        display: block;
-      }
-
-      .competence-container {
-        font-size: 2rem
-      }
-
-      footer .footer-frame {
-        display: block;
-        margin: .2rem 0;
-        padding: .1rem 0;
-        text-align: center;
-        width: 100%
-      }
+    .footer-frame {
+      display: block;
+      margin: .2rem 0;
+      padding: .4rem 0;
+      text-align: center;
+      width: 100%
     }
   }
   .show-md-up {
