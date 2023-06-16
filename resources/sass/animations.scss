@@ -112,6 +112,15 @@
     opacity: 0;
   }
 
+  .fade-ninth {
+    -webkit-animation: fadein 0.5s linear 1.9s forwards;
+    -moz-animation: fadein 0.5s linear 1.9s forwards;
+    -ms-animation: fadein 0.5s linear 1.9s forwards;
+    -o-animation: fadein 0.5s linear 1.9s forwards;
+    animation: fadein 0.5s linear 1.9s forwards;
+    opacity: 0;
+  }
+
   .read-more.active {
     .fade-first {
       -webkit-animation: fadein 0.5s linear 0s forwards;
